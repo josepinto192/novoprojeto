@@ -1,0 +1,425 @@
+/* =================================
+|   Default Theme Promessometro
+|   --------------------------------
+|   Fonts: Poppins & Opens Sans
+|   --------------------------------
+|   Colors: 
+|       Regal Blue:    #1B2C53
+|       White Smoke:   #F8F8F8 ou f4f4f4
+|       California:    #EB9033
+|       Grey:          #212226
+|       White:         #FFF
+|       Black:         #000
+==================================== */
+
+
+/* =================================
+|   |   |  Html, Body
+==================================== */
+
+@font-face {
+    font-family: "Poppins Medium";
+    src: url("fonts/Poppins-Medium.ttf");
+}
+@font-face {
+    font-family: "Poppins Regular";
+    src: url("fonts/Poppins-Regular.ttf");
+}
+@font-face {
+    font-family: "Segoe UI Regular";
+    src: url("fonts/Segoe\ UI.ttf");
+}
+@font-face {
+    font-family: "Poppins Bold";
+    src: url("fonts/Poppins-Bold.ttf");
+}
+html,
+body {
+    height: 100%;
+}
+
+body {
+    color: #212226;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: "Poppins", sans-serif;
+}
+
+p {
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    font-weight: 401;
+    line-height: 24px;
+    color: #1B2C53;
+
+}
+
+section {
+    background: #fff;
+    overflow: hidden;
+}
+
+
+/* =================================
+|   |   |  Preloader
+==================================== */
+
+#preloader {
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+#status {
+    background-image: url("../img/preloader.gif");
+    background-repeat: no-repeat;
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -35px;
+    margin-left: -35px;
+}
+
+
+/* =================================
+|   |   |  Header
+==================================== */
+
+.header {
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    position: fixed;
+    height: 80px;
+    z-index: 999;
+    opacity: 0.89;
+}
+.header-logo {
+    padding: 10px;
+}
+
+/* =================================
+|   |   |  Home
+==================================== */
+
+#home {
+    background: none;
+    padding-top: 193px;
+}
+
+#home-content {
+    width: 100%;
+    height: 100%;
+    display: table;
+    background: none;
+}
+
+#home-content-inner {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#home-heading h1 {
+    color: #1B2C53;
+    font-size: 33px;
+    margin-bottom: 0;
+}
+
+#home-text p:first-child{
+    font-size: 16px;
+    font-weight: 401;
+}
+
+#home-central {
+    width: 630px;
+    padding-left: 100px;
+}
+
+#home {
+    background-image: url(../images/Ilustra_01.png), url(../images/Ilustra_02_manchas.png);
+    background-repeat: no-repeat, no-repeat;
+    background-position:right top, left top;
+	background-size: 40%;
+}
+h1 {
+    font-family: "Poppins Medium";
+    font-size: 44px;
+    padding-top: 170px;
+    
+}
+h3 {
+    font-family: "Poppins Medium";
+    font-size: 24px;
+    line-height: 40px;
+}
+p {
+    font-family: "Poppins Regular";
+    font-size: 24px;
+    line-height: 40px;
+}
+.home-title {
+    width: 66%;
+}
+.menu-top li {
+    font-size: 16px;
+    font-family: "Segoe UI Regular";
+    float: left;
+    margin-left: 15px; 
+    color: #000; 
+}
+.menu-top {
+    margin-left: 230px;
+    padding: 26px;
+}
+.form-fields {
+    font-family: "Segoe UI Regular";
+    font-size: 22px;
+    height: 81px;
+    padding: 6px 10px;
+}
+h2 {
+    font-family: "Poppins Bold";
+    font-size: 24px;
+    height:29px ;
+    width: 273px;
+}
+.form-todos{
+    font-family: "Poppins Regular";
+    font-size: 15px;
+    width: 176px;
+    height: 72px;
+    float: left;
+    margin-left: 15px;
+    border: 1px solid #f7911e;
+}
+.card {
+    margin: 20px 5px 0 5px;
+    padding: 30px;
+    border: 1px solid #CCCCCC;   
+    border-radius: 4px;
+    background-color: #ffffff;
+}
+.btn-todos {
+    height: 72px;
+    width: 150px;
+    font-size: 18px;
+    font-family: "Poppins Regular";
+    padding: 34px 10px;
+    border: 1px solid #f7911e;
+    margin: 2px 2px 2px 2px;
+    color: #f7911e;
+    float: left;
+    display: block;
+}
+.btn-todos:hover {
+   /* background-color: #EB9033;
+    color: #fff;*/
+    text-decoration: none;
+    color: #f7911e;
+}
+.estatistica-geral {
+   font-size: 44px;
+   font-family: "Poppins medium";
+}
+.grafico {
+    width: 120.47px;
+    height: 120.47px;
+    border: #1B2C53;
+}
+.form-contato input {
+    width: 100%;
+    border: 1px solid #F7911E;
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.1);
+}
+.form-contato textarea {
+    width: 100%;
+    height: 224px;
+    border: 1px solid #F7911E;
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.1);
+}
+footer {
+    background-color: #4E4E4E; 
+    margin-top: 10px;
+    color: #fff;
+    width: 100%;
+    padding: 15px 0;
+}
+/* =================================
+|   |   |  Buttons
+==================================== */
+
+.btn-general {
+    font-family: "Open Sans", sans-serif;
+    border-radius: 3px;
+    font-size: 14px;
+    margin: 0 6px;
+    padding: 14px 16px 16px 16px;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+    height: 17.49px;
+    width: 17.49px;
+}
+.btn-general span{
+    top: 18px;
+}
+
+.btn-home {
+    color: #fff;
+    border: 1px solid #f7911e;
+    background-color: #f7911e;
+}
+.btn-search {
+    color: #fff;
+    border: 1px solid #f7911e;
+    background-color: #f7911e;
+    width: 80px;
+    height: 80px;
+}
+.btn-colabore{
+    color: #fff;
+    border: 1px solid #f7911e;
+    background-color: #f7911e;
+    width: 184px;
+    height: 72px;
+    font-size: 22px;
+    font-family: "Segoe UI Regular";
+}
+
+.btn-home:hover,
+.btn-home:focus {
+    color: #fff;
+    background-color: #EB9033;
+    border: 1px solid #f7911e;
+}
+    
+.btn-candidato {
+    min-width:800px;
+    width: 800px;
+}
+.btn-ano {
+    min-width:200px;
+    width: 200px;
+}
+.btn-design-candidato {
+    margin: 0 5px auto;
+    padding: 1px 1px 1px 1px;
+    border-radius: 5px;
+    background-color: #f7911e;
+    
+}
+.btn-design-candidato:hover {
+    background-color: #EB9033;
+}
+.home-btn {
+    padding-top: 30px;
+}
+.btn-todos.um {
+    background-image: url(../img/acesso_rápido_01.svg);
+    background-repeat: no-repeat;
+    background-position: 0px -15px;
+}
+.btn-todos.dois {
+    background-image: url(../img/acesso_rapido_02.svg);
+    background-repeat: no-repeat;
+    background-position: 0px -15px;
+}
+.btn-todos.tres {
+    background-image: url(../img/acesso_rapido_03.svg);
+    background-repeat: no-repeat;
+    background-position: 0px -15px;
+}
+.btn-todos.quatro {
+    background-image: url(../img/acesso_rapido_04.svg);
+    background-repeat: no-repeat;
+    background-position: 0px -15px;
+}
+.titulo {
+    font-size: 44px;
+    font-family: "Poppins Medium";
+}
+.fundo-cinza {
+    background-color: #FAFAFC;
+
+}
+.paddingTop30{
+    padding-top: 30px;
+}
+.rodape {
+    font-size: 16px;
+    padding: 20px;
+}
+.redes {
+    width: 135px;
+    height: 28px;
+    color: #fff;
+    font-family: "Poppins Regular";
+    font-size: 15px;
+}
+/* =================================
+|   |   |  Arrow Down
+==================================== */
+
+#arrow-down {
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    color: #000;
+    font-size: 32px;
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    margin-left: -16px;
+    z-index: 1;
+}
+
+#arrow-down:hover,
+#arrow-down:focus {
+    color: #f7911e;
+}
+
+/* =================================
+|   |   |  About
+==================================== */
+
+#about-middle {
+    margin: 0 0 0 -170px;
+}
+.about-01 {
+    margin: 70px 0 0 0;
+}
+/* =================================
+|   |   |  About 04 Estatisticas
+==================================== */
+
+#about-04 {
+    background: none;
+    height: 100%;
+}
+
+#about-04-content {
+    width: 100%;
+    height: 100%;
+    display: table;
+}
+
+#about-04-content-inner {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#about-04-heading h1 {
+    color: #1B2C53;
+    font-size: 30px;
+    margin: 0;
+}
