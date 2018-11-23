@@ -1,0 +1,120 @@
+MANIFESTS ANDROID MANIFEST 
+<?xml version="1.0" encoding="utf-8"?> 
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.inforecarga.site2">
+
+ pedro Bezerra
+pedro Bezerra
+1 ano atrás
+MANIFESTS
+ANDROID MANIFEST
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.inforecarga.site2">
+
+
+<uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="inforecarga"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+				
+				 <category android:name="android.intent.category.LAUNCHER" />
+				 </intent-filter> 
+				 </activity>
+				 </application>
+				 </manifest>
+
+
+JAVA MAINACTIVITY.JAVA package com.inforecarga.site2; 
+import android.support.v7.app.AppCompatActivity; 
+import android.os.Bundle; 
+import android.webkit.WebView; 
+import android.webkit.WebViewClient; 
+public class MainActivity extends AppCompatActivity { @Override protected void onCreate(Bundle savedInstanceState) { super.onCreate(savedInstanceState); 
+setContentView(R.layout.activity_main); 
+WebView webb =(WebView) findViewById(R.id.web1);
+webb.setWebViewClient(new WebViewClient()); 
+webb.loadUrl("http://promessometro.com/"); } } 
+
+ pedro Bezerra
+pedro Bezerra
+1 ano atrás
+MANIFESTS
+ANDROID MANIFEST
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.inforecarga.site2">
+
+
+<uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="inforecarga"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
+
+
+JAVA
+
+MAINACTIVITY.JAVA
+package com.inforecarga.site2;
+
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.webkit.WebView;
+import android.webkit.WebViewClient;
+
+public class MainActivity extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        WebView webb =(WebView) findViewById(R.id.web1);
+        webb.setWebViewClient(new WebViewClient());
+        webb.loadUrl("http://inforecarga.com.br/");
+
+
+    }
+}
+
+
+ACTIVITY_MAIN
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.inforecarga.site2.MainActivity">
+
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/web1"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>
+
+
